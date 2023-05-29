@@ -2,17 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Городок Седона</title>
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="header-logo">
+      <a class="header-logo">
         <img src="#" alt="Логотип Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О седоне</a>
@@ -23,24 +23,24 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <button class="button" type="button">
               <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <button class="like-button" type="button">
-              <span class="visually-hidden">Нравится</span>
             </button>
           </li>
           <li class="navigation-item">
-            <a class="button button-want" href="#">Хочу сюда!</a>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <button class="button" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
       <section class="hero">
-        <h1 class="visually-hidden">Городок Седона</h1>
+        <h1 class="visually-hidden">Добро пожаловать в велилоколепную Седону</h1>
         <img class="logo-welcome" src="#" alt="Добро пожаловать в Седону">
       </section>
       <section class="about">
@@ -101,18 +101,18 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="main-text"><b>Заинтересовались?</b></p>
         <p class="text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button button-search" href="catalog.html">Поиск гостиницы в Седоне</a>
-      </section>
-      <section class="mailing-list">
-        <h2 class="mailing-list-title">Подпишитесь на рассылку</h2>
-        <p class="mailing-list-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="mailing-list-email">E-mail</label>
-          <input class="email-field" placeholder="Ваш e-mail" type="email" name="mailing-list-email" id="mailing-list-email" required>
-          <button class="button mailing-list-button" type="submit">Подписаться</button>
-        </form>
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
       </section>
     </main>
+    <section class="mailing-list">
+      <h2 class="mailing-list-title">Подпишитесь на рассылку</h2>
+      <p class="mailing-list-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="mailing-list-email">E-mail</label>
+        <input class="email-field" placeholder="Ваш e-mail" type="email" name="mailing-list-email" id="mailing-list-email" required>
+        <button class="button mailing-list-button" type="submit">Подписаться</button>
+      </form>
+    </section>
     <footer class="page-footer">
       <ul class="social-list">
         <li class="social-list-item">
