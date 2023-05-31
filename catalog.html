@@ -39,9 +39,9 @@
       </nav>
     </header>
     <main class="main-catalog">
-      <div class="hotels-search-wrap">
-        <section class="hotels-header">
-          <h1 class="hotels-title">Гостиницы Седоны</h1>
+      <div class="catalog-hero">
+        <section class="catalog-header">
+          <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
@@ -53,25 +53,25 @@
             </li>
           </ul>
         </section>
-        <section class="search-options">
-          <h2 class="visually-hidden">Параметры поиска</h2>
-          <form class="search-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="search-filter-group">
-              <legend class="search-filter-title">Инфраструктура:</legend>
-              <ul class="search-filter-list">
-                <li class="search-filter-item">
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтр подбора гостиницы</h2>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="pool" checked>
                     Бассейн
                   </label>
                 </li>
-                <li class="search-filter-item">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="parking" checked>
                     Парковка
                   </label>
                 </li>
-                <li class="search-filter-item">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="wi-fi">
                     Wi-Fi
@@ -79,22 +79,22 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="search-filter-group">
-              <legend class="search-filter-title">Тип жилья:</legend>
-              <ul class="search-filter-list">
-                <li class="search-filter-item">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
                     Гостиница
                   </label>
                 </li>
-                <li class="search-filter-item">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="type-of-housing" value="motel">
                     Мотель
                   </label>
                 </li>
-                <li class="search-filter-item">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="type-of-housing" value="apartments">
                     Апартаменты
@@ -102,8 +102,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="search-filter-group">
-              <legend class="search-filter-title">Стоимость, ₽:</legend>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="control">
                 <input class="control-input" type="text" value="0">
                 Минимальная цена
@@ -116,37 +116,37 @@
                 <input class="control-input" type="range" min="" max="" step="" value="0">
               </label>
             </fieldset>
-            <div class="search-buttons-container">
+            <div class="filter-buttons-container">
               <button class="button" type="submit">Применить</button>
               <button class="reset-button" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
       </div>
-      <section class="search-result">
+      <section class="catalog">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <div class="search-result-container">
-          <p class="result-info">Найдено гостиниц: <span>38</span></p>
+        <div class="catalog-container">
+          <p class="catalog-result">Найдено гостиниц: <span>38</span></p>
           <label class="visually-hidden">
-            <select class="search-result-sorting">
+            <select class="catalog-sorting">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="high-rating">С высоким рейтингом</option>
             </select>
             Сортировака
           </label>
-          <ul class="search-result-display">
-            <li class="result-display-item">
+          <ul class="catalog-display">
+            <li class="catalog-display-option">
               <a class="display-button display-button-active" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
             </li>
-            <li class="result-display-item">
+            <li class="catalog-display-option">
               <a class="display-button" href="#">
                 <span class="visually-hidden">Показать слайдер</span>
               </a>
             </li>
-            <li class="result-display-item">
+            <li class="catalog-display-option">
               <a class="display-button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
