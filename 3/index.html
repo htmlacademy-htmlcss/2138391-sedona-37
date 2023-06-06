@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Городок Седона</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2138391-sedona-37/3/">
+</head>
+  <body>
+    <header class="page-header">
+      <a class="header-logo">
+        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <button class="navigation-button" type="button">
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <button class="button" type="button">Хочу сюда!</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <section class="hero">
+        <h1 class="visually-hidden">Добро пожаловать в велилоколепную Седону</h1>
+        <img class="hero-welcome" src="images/hero-text.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Большой Каньон так себе.">
+      </section>
+      <section class="advantages">
+        <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="section-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ul class="advantages-list">
+          <li class="advantages-item advantages-item-modified">
+            <h3>Настоящий городок</h3>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="images/sedona-street.jpg" width="800" height="385" alt="Улица Седоны как в вестерне.">
+          </li>
+          <li class="advantages-item">
+            <h3>Небольшая площадь</h3>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-item advantages-item-current">
+            <h3>Красивая дорога</h3>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h3>Мало туристов</h3>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantages-item advantages-item-modified">
+            <h3>Там есть мост дьявола</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="images/devils-bridge.jpg" width="800" height="385" alt="Мост дьявола в каньоне.">
+          </li>
+        </ul>
+      </section>
+      <section class="features">
+        <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="section-subtitle">Опытный персонал и качественное обслуживание!</p>
+        <ul class="features-list">
+          <li class="features-item">
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="features-item features-item-current">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="features-item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="section-title">Заинтересовались?</h2>
+        <p class="section-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <section class="subscription">
+        <h2 class="section-title section-title-light">Подпишитесь на рассылку</h2>
+        <p class="section-subtitle section-subtitle-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden">
+            <input class="email-field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
+            E-mail
+          </label>
+          <button class="subscription-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a class="button" href="https://vk.com/htmlacademy" target="_blank">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="button" href="https://t.me/htmlacademy" target="_blank">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <p class="footer-telephone">
+        <a class="footer-telephone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </p>
+      <p class="footer-logo">
+        <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
+          <img src="images/academy-logo.svg" width="115" height="33" alt="Логотип Академии.">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
