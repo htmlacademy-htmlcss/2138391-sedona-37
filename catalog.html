@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -39,7 +40,7 @@
       </nav>
     </header>
     <main class="main-catalog">
-      <div class="catalog-hero">
+      <div class="header-filter-wrap">
         <section class="catalog-header">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -117,8 +118,8 @@
               </label>
             </fieldset>
             <div class="filter-buttons-container">
-              <button class="button" type="submit">Применить</button>
-              <button class="reset-button" type="reset">Сбросить</button>
+              <button class="button apply-button" type="submit">Применить</button>
+              <button class="button reset-button" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -133,7 +134,7 @@
               <option value="expensive">Сначала дорогие</option>
               <option value="high-rating">С высоким рейтингом</option>
             </select>
-            Сортировака
+            Сортировка
           </label>
           <ul class="catalog-display">
             <li class="catalog-display-option">
@@ -266,17 +267,17 @@
     <footer class="page-footer">
       <ul class="social-list">
         <li class="social-list-item">
-          <a class="button" href="https://vk.com/htmlacademy" target="_blank">
+          <a class="social-list-vk" href="https://vk.com/htmlacademy" target="_blank">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="social-list-item">
-          <a class="button" href="https://t.me/htmlacademy" target="_blank">
+          <a class="social-list-telegramm" href="https://t.me/htmlacademy" target="_blank">
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="social-list-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <a class="social-list-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
