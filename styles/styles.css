@@ -14,13 +14,33 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
   color: #333333;
+  height: 100%;
 }
+
+.page-container {
+  display: flex;
+  width: 1200px;
+  min-height: 100%;
+  margin: auto;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 
 .button {
   font-family: inherit;
@@ -81,9 +101,6 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.page-header {
-  background-color: #FFFFFF;
-}
 
 .navigation-list {
   list-style: none;
@@ -98,9 +115,6 @@ body {
   text-decoration: none;
 }
 
-.main-index {
-  background-color: #FFFFFF;
-}
 
 .hero {
   min-height: 485px;
@@ -201,10 +215,6 @@ body {
 
 .subscription-modified .section-title {
   color: #FFFFFF;
-}
-
-.page-footer {
-  background-color: #FFFFFF;
 }
 
 .footer-telephone-link {
