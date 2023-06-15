@@ -225,10 +225,6 @@ body {
   text-decoration: none;
 }
 
-.main-catalog {
-  background-color: #FFFFFF;
-}
-
 .header-filter-wrap {
   min-height: 412px;
   background: url('../images/catalog-filter-background.jpg') center no-repeat;
