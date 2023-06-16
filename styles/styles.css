@@ -279,12 +279,25 @@ body {
   padding: 0 70px;
 }
 
+.sociail-list {
+  width: 142px;
+  list-style: none;
+}
+
 .footer-telephone-link {
+  display: inline-block;
+  width: 720px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   color: #000000;
   text-decoration: none;
+  text-align: center;
+}
+
+.footer-logo {
+  display: inline-block;
+  width: 115px;
 }
 
 .header-filter-wrap {
