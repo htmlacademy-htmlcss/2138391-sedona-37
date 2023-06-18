@@ -20,6 +20,8 @@
   box-sizing: border-box;
 }
 
+/* Создают "стакан" и "липкий" футер */
+
 html {
   height: 100%;
 }
@@ -34,6 +36,8 @@ body {
   height: 100%;
 }
 
+/* Задает ширину и центрирует body, main, footer */
+
 .page-container {
   display: flex;
   width: 1200px;
@@ -44,10 +48,13 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Прижимает footer вниз страницы  внезависимости от размера контента внутри секции main */
+
 .main-container {
   flex-grow: 1;
 }
 
+/* Стили кнопок */
 
 .button {
   font-family: inherit;
@@ -108,6 +115,7 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+/* Главная */
 
 .page-header {
   display: flex;
@@ -318,6 +326,8 @@ body {
   background-color: rgba(56, 155, 221, 0.3);
   color: #FFFFFF;
 }
+
+/*Гостиницы */
 
 .catalog-title {
   font-size: 60px;
