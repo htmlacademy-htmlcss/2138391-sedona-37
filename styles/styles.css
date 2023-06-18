@@ -329,9 +329,14 @@ body {
 
 /*Гостиницы */
 
+.header-filter-wrap {
+  padding: 35px 70px 70px;
+}
+
 .catalog-title {
   font-size: 60px;
   line-height: 78px;
+  margin-top: 0;
 }
 
 .breadcrumbs {
@@ -343,6 +348,10 @@ body {
   font-weight: 400;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -367,8 +376,35 @@ body {
   text-transform: uppercase;
 }
 
+.catalog {
+  padding: 50px 70px 60px;
+}
+
+.catalog-container {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-display {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hotel-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hotel-card {
+  width: 340px;
+  min-height: 438px;
+
 }
 
 .hotel-card-link {
@@ -389,8 +425,15 @@ body {
   text-transform: uppercase;
 }
 
+.catalog-pagination {
+  display: flex;
+}
+
 .pagination-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .pagination-link {
