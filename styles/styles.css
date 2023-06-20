@@ -192,6 +192,17 @@ body {
   flex-wrap: wrap;
 }
 
+.advantages-item {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-modified {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .content-columns {
   width: 400px;
   min-height: 385px;
@@ -201,18 +212,10 @@ body {
   justify-content: center;
 }
 
-.advantages-item-modified {
-  display: flex;
-}
-
 .advantages-image {
   width: 800px;
   height: 100%;
   object-fit: cover;
-}
-
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item:nth-child(even) {
