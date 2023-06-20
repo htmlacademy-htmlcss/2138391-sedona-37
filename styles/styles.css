@@ -196,6 +196,7 @@ body {
 
 .hero {
   min-height: 485px;
+  padding-top: 51px;
   background: url("../images/hero-background-divider.svg") center bottom no-repeat, url("../images/hero-background.jpg") center no-repeat;
   background-size: 100% auto, cover;
   background-color: rgba(56, 155, 221, 0.3);
@@ -213,6 +214,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  margin: 0;
   color: #000000;
   text-transform: uppercase;
 }
@@ -222,6 +224,19 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+}
+
+.advantages {
+  padding-top: 69px;
+}
+
+.advantages .section-title {
+  margin-bottom: 25px;
+}
+
+.advantages .section-subtitle {
+  margin-bottom: 90px;
 }
 
 .advantages-list {
@@ -289,6 +304,18 @@ body {
   flex-direction: row-reverse;
 }
 
+.features {
+  padding-top: 96px;
+}
+
+.features .section-title {
+  margin-bottom: 20px;
+}
+
+.features .section-subtitle {
+  margin-bottom: 64px;
+}
+
 .features-list {
   text-align: center;
   list-style: none;
@@ -300,7 +327,7 @@ body {
 .features-item {
   width: 400px;
   min-height: 385px;
-  padding: 0 85px;
+  padding: 183px 85px 81px;
 }
 
 .features-item:nth-child(odd) {
@@ -316,7 +343,20 @@ body {
 }
 
 .search {
-  text-align: center;
+  padding: 50px 304px;
+  display: flex;
+  min-height: 406px;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.search .section-title {
+  margin-bottom: 20px;
+}
+
+.search .section-subtitle {
+  margin-bottom: 54px;
 }
 
 .subscription {
