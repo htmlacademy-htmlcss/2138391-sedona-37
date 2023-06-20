@@ -20,6 +20,19 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Создают "стакан" и "липкий" футер */
 
 html {
@@ -61,6 +74,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  max-width: 200px;
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
@@ -70,15 +84,26 @@ body {
   padding: 8px 34px;
 }
 
+.navigation-button {
+  border: 0;
+  padding: 0;
+  width: 44px;
+  height: 64px;
+  background-color: #FFFFFF;
+  background: url("../images/icon-search.svg") center no-repeat;
+}
+
 .search-button {
   font-size: 20px;
   line-height: 36px;
+  max-width: 590px;
   padding: 8px 50px;
 }
 
 .apply-button {
   background-color: #82B3D3;
   padding: 8px 50px;
+
 }
 
 .reset-button {
@@ -106,6 +131,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  max-width: 240px;
   text-align: center;
   text-transform: uppercase;
   background-color: #82B3D3;
@@ -123,27 +149,30 @@ body {
   justify-content: space-between;
 }
 
+.header-logo {
+  position: relative;
+  margin-bottom: -10px;
+  margin-right: 28px;
+}
+
 .navigation {
   display: flex;
 }
 
-.header-logo {
-  margin-right: 28px;
-}
 
 .navigation-list {
-  list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
   margin: 0;
   padding: 0;
-  width: 590px;
-}
-
-.navigation-user {
-  width: 268px;
+  width: 540px;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -152,6 +181,18 @@ body {
   text-decoration: none;
 }
 
+.navigation-user {
+  max-width: 315px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navigation-user .navigation-link {
+  display: block;
+  width: 44px;
+  height: 64px;
+  background: url(../images/icon-favorites.svg) center no-repeat;
+}
 
 .hero {
   min-height: 485px;
