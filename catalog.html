@@ -46,7 +46,7 @@
             <h1 class="catalog-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                   <span class="visually-hidden">На главную</span>
                 </a>
               </li>
@@ -58,7 +58,7 @@
           <section class="filter">
             <h2 class="visually-hidden">Фильтр подбора гостиницы</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group filter-group-infra">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -81,7 +81,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group filter-group-housing">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -104,19 +104,13 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group filter-group-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <label class="control">
-                  <input class="control-input" type="text" value="0">
-                  Минимальная цена
-                </label>
-                <label class="control">
-                  <input class="control-input" type="text" value="9000">
-                  Максимальная цена
-                </label>
-                <label class="control">
-                  <input class="control-input" type="range">
-                </label>
+                <div class="test-wrapper">
+                  <input class="control-input" type="text" value="0" aria-lable="Минимальная цена">
+                  <input class="control-input" type="text" value="9000" aria-lable="Максимальная цена">
+                </div>
+                <input class="control-input" type="range" aria-label="Шкала цены">
               </fieldset>
               <div class="filter-buttons-container">
                 <button class="button apply-button" type="submit">Применить</button>

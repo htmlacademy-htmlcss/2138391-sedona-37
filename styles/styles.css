@@ -470,10 +470,18 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  gap: 29px;
+  align-items: center;
 }
 
 .breadcrumbs-link {
@@ -483,18 +491,65 @@ body {
   text-decoration: none;
 }
 
+.breadcrumbs-link-home {
+  display: block;
+  width: 13px;
+  height: 15px;
+  background: url("../images/icon-home.svg") center no-repeat;
+}
+
 .catalog-filter {
   display: flex;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.filter-group-infra {
+  margin-right: 70px;
+}
+
+.filter-group-housing {
+  margin-right: 140px;
+}
+
+.filter-group-price {
+  margin-right: 70px;
+}
+
+.test-wrapper {
+  display: flex;
+  gap: 2px;
+}
+
+.test-wrapper .control-input {
+  padding: 0;
+  border: none;
+}
+
+.filter-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding: 0;
 }
 
 .catalog-filter-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .control {
