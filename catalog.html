@@ -29,7 +29,7 @@
                 <span class="visually-hidden">Поиск</span>
               </button>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item item-indent">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
@@ -253,14 +253,11 @@
             <a class="pagination-link" href="#">10</a>
           </div>
         </section>
-        <section class="subscription subscription-light">
+        <section class="subscription">
           <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p class="section-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden">
-              <input class="email-field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
-              E-mail
-            </label>
+          <form class="subscription-form form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="email-field" placeholder="Ваш e-mail" type="email" name="subscription-email" aria-label="e-mail" required>
             <button class="subscription-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -268,17 +265,17 @@
       <footer class="page-footer">
         <ul class="social-list">
           <li class="social-list-item">
-            <a class="social-list-vk" href="https://vk.com/htmlacademy" target="_blank">
+            <a class="social-list-link social-list-vk" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="social-list-item">
-            <a class="social-list-telegramm" href="https://t.me/htmlacademy" target="_blank">
+            <a class="social-list-link social-list-telegramm" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="social-list-item">
-            <a class="social-list-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <a class="social-list-link social-list-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
