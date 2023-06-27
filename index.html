@@ -9,7 +9,7 @@
     <div class="page-container">
       <header class="page-header">
         <a class="header-logo">
-          <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
+          <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -46,8 +46,10 @@
           <img class="hero-welcome" src="images/hero-text.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Большой Каньон так себе.">
         </section>
         <section class="advantages">
-          <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="section-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages-content-wrapper">
+            <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="section-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-modified">
               <div class="content-columns">
@@ -84,8 +86,10 @@
           </ul>
         </section>
         <section class="features">
-          <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="section-subtitle">Опытный персонал и качественное обслуживание!</p>
+          <div class="features-content-wrapper">
+            <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="section-subtitle">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="features-list">
             <li class="features-item">
               <h3 class="features-item-title">Жильё</h3>
@@ -110,7 +114,10 @@
           <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p class="section-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email-field" placeholder="Ваш e-mail" type="email" name="subscription-email" aria-label="e-mail" required>
+            <label class="email-control">
+              <input class="email-field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
+              <span class="visually-hidden">E-mail</span>
+            </label>
             <button class="subscription-button" type="submit">Подписаться</button>
           </form>
         </section>
