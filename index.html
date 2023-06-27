@@ -9,7 +9,7 @@
     <div class="page-container">
       <header class="page-header">
         <a class="header-logo">
-          <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
+          <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -29,7 +29,7 @@
                 <span class="visually-hidden">Поиск</span>
               </button>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item item-indent">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
@@ -46,8 +46,10 @@
           <img class="hero-welcome" src="images/hero-text.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Большой Каньон так себе.">
         </section>
         <section class="advantages">
-          <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="section-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages-content-wrapper">
+            <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="section-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-modified">
               <div class="content-columns">
@@ -84,8 +86,10 @@
           </ul>
         </section>
         <section class="features">
-          <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="section-subtitle">Опытный персонал и качественное обслуживание!</p>
+          <div class="features-content-wrapper">
+            <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="section-subtitle">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="features-list">
             <li class="features-item">
               <h3 class="features-item-title">Жильё</h3>
@@ -103,16 +107,16 @@
         </section>
         <section class="search">
           <h2 class="section-title">Заинтересовались?</h2>
-          <p class="section-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="section-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscription subscription-modified">
           <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p class="section-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden">
+          <form class="subscription-form form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="email-control">
               <input class="email-field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
-              E-mail
+              <span class="visually-hidden">E-mail</span>
             </label>
             <button class="subscription-button" type="submit">Подписаться</button>
           </form>
@@ -121,17 +125,17 @@
       <footer class="page-footer">
         <ul class="social-list">
           <li class="social-list-item">
-            <a class="social-list-vk" href="https://vk.com/htmlacademy" target="_blank">
+            <a class="social-list-link social-list-vk" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="social-list-item">
-            <a class="social-list-telegramm" href="https://t.me/htmlacademy" target="_blank">
+            <a class="social-list-link social-list-telegramm" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="social-list-item">
-            <a class="social-list-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <a class="social-list-link social-list-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
