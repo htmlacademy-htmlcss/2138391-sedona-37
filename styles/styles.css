@@ -707,7 +707,8 @@ body {
 }
 
 .hotel-card-rating {
-  padding: 9px 22px 8px 23px;
+  padding: 9px 10px 8px 10px;
+  text-align: center;
   background-color: #F2F2F2;
   border-radius: 4px;
   font-size: 16px;
