@@ -655,7 +655,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: min-content 1fr;
-  align-items: center;
+  align-items: start;
   row-gap: 16px;
   column-gap: 20px;
   min-height: 438px;
