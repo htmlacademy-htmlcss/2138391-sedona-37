@@ -641,16 +641,25 @@ body {
 .email-field {
   border: none;
   width: 452px;
-  padding-right: 10px;
-  padding-left: 20px;
+  padding: 12px 20px;
   height: 52px;
-  font-family: inherit;
+  font: inherit;
   line-height: 24px;
   font-weight: 400;
   background-color:#F2F2F2;
   border-radius: 4px 0 0 4px;
 }
+.email-field:hover {
+  background-color: #E6E6E6;
+}
 
+.email-field:focus {
+  background-color: #E6E6E6;
+}
+
+.email-field:disabled {
+  background-color: rgba(255, 255, 255, 0.6);
+}
 
 .page-footer {
   display: flex;
@@ -839,15 +848,23 @@ body {
 .filters-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 370px;
+  max-width: 370px;
   gap: 70px;
 }
 
 .range-buttons-wrapper {
   display: flex;
-  max-width: 549px;
   gap: 70px;
 }
+
+.filter-buttons-wrapper {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
 
 .catalog-filter-title {
   font-size: 20px;
@@ -871,15 +888,142 @@ body {
   margin-bottom: 0;
 }
 
+
 .control {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  background: url("../images/tick-icon.svg") center no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.control-label {
   line-height: 23px;
   font-weight: 400;
 }
 
-.control-input {
-  margin: 0;
-  margin-right: 16px;
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
 }
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 6px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+}
+
+.range-wrapper-inputs {
+  margin-bottom: 36px;
+  display: flex;
+  gap: 2px;
+}
+
+.catalog-filter-label {
+  position: relative;
+}
+
+.range-input {
+  width: 143px;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  appearance: textfield;
+}
+
+.range-input:hover {
+  background-color: #E6E6E6;
+}
+
+.range-input:focus {
+  background-color: #E6E6E6;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input-reversed  {
+  border-radius: 0 4px 4px 0;
+}
+
+.input-label-text {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color:rgba(0, 0, 0, 0.3);
+  transform: translate(0, -50%);
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 0 6px 3px;
+}
+
+.range-toggle:focus {
+  box-shadow: 0 0 6px 3px;
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -10px;
+}
+
+.toggle-max {
+  top: -10px;
+  right: 0;
+}
+
 
 .catalog-result {
   font-size: 30px;
