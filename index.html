@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Городок Седона</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -18,7 +19,7 @@
               <a class="navigation-link navigation-link-current">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -196,18 +197,18 @@
         </section>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="search-control search-control-date">
-            <span class="search-control-text">Дата Заезда:</span>
+            <span class="search-control-text-date">Дата Заезда:</span>
             <input type="text" class="search-form-field" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
             <span class="search-control-tip search-control-tip-error">Мы не можем отправить вас в прошлое.</span>
           </label>
           <label class="search-control search-control-date">
-            <span class="search-control-text">Дата Выезда:</span>
+            <span class="search-control-text-date">Дата Выезда:</span>
             <input type="text" class="search-form-field" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
             <span class="search-control-tip">На эти даты есть свободные номера. Пока есть.</span>
           </label>
           <div class="search-control-wrapper">
             <label class="search-control search-control-person">
-              <span class="search-control-text search-control-text-adult">Взрослые:</span>
+              <span class="search-control-text-adult">Взрослые:</span>
               <input type="number" class="search-form-field" name="adult-qty" value="2" min="0" max="10">
               <button class="qty-button qty-button-less" type="button">
                 <svg class="qty-button-icon" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +224,8 @@
               </button>
             </label>
             <label class="search-control search-control-person">
-              <span class="search-control-text search-control-text-children">Дети:
+              <span class="search-control-text-children">
+                Дети:
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-person"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-person">
@@ -231,7 +233,7 @@
                   </span>
                 </span>
               </span>
-              <input type="number" class="search-form-field search-form-field-children" name="children-qty" value="2" min="0" max="10">
+              <input type="number" class="search-form-field" name="children-qty" value="2" min="0" max="10">
               <button class="qty-button qty-button-less" type="button">
                 <svg class="qty-button-icon" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z"/>

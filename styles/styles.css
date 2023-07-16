@@ -607,7 +607,7 @@ body {
 
 .subscription {
   min-height: 415px;
-  padding: 50px 258px 60px;
+  padding: 50px 258px 60px;;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -619,7 +619,7 @@ body {
 }
 
 .subscription .section-subtitle {
-  margin-bottom: 54px;
+  margin-bottom: 50px;
 }
 
 .subscription-modified {
@@ -664,7 +664,7 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 45px 70px 35px;
+  padding: 46px 70px 35px;
   align-items: center;
 }
 
@@ -850,7 +850,7 @@ body {
   appearance: none;
 }
 
-.search-control-date .search-control-text {
+.search-control-date .search-control-text-date {
   width: 137px;
 }
 
@@ -870,22 +870,18 @@ body {
 }
 
 .search-control-person .search-control-text-adult {
-  width: 91px;
+  width: 137px;
 }
 
 .search-control-person .search-control-text-children {
-  width: 49px;
-  display: inline-block;
+  width: 131px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .search-control-person .search-form-field {
   width: 110px;
-  margin-left: 46px;
   text-align: center;
-}
-
-.search-control-person .search-form-field-children {
-  margin-left: 82px;
 }
 
 .qty-button {
@@ -895,6 +891,8 @@ body {
   background-color: transparent;
   padding: 0;
   position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
   cursor: pointer;
 }
 
@@ -908,12 +906,10 @@ body {
 }
 
 .qty-button-less {
-  top: 0;
   right: 71px;
 }
 
 .qty-button-more {
-  top: 0;
   right: 0;
 }
 
@@ -928,7 +924,7 @@ body {
 }
 
 .tooltip {
-  position: absolute;
+  position: relative;
   margin-left: 10px;
   width: 26px;
   height: 26px;
@@ -937,8 +933,8 @@ body {
 .tooltip-toggle {
   border: none;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background-color: #83B3D3;
   background-image: url(../images/icon-info.svg);
@@ -957,7 +953,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 24px 22px;
   width: 256px;
   border-radius: 10px;
   color: #FFFFFF;
@@ -1314,7 +1310,7 @@ body {
 }
 
 .catalog {
-  padding: 50px 70px 60px;
+  padding: 48px 70px 60px;
 }
 
 .catalog-result {
@@ -1329,7 +1325,7 @@ body {
 .catalog-container {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .catalog-sorting {
@@ -1395,8 +1391,8 @@ body {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #E6E6E6;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 38px;
+  margin-bottom: 38px;
 }
 
 .hotel-card {
