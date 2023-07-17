@@ -207,9 +207,9 @@
             <span class="search-control-tip">На эти даты есть свободные номера. Пока есть.</span>
           </label>
           <div class="search-control-wrapper">
-            <label class="search-control search-control-person">
-              <span class="search-control-text-adult">Взрослые:</span>
-              <input type="number" class="search-form-field" name="adult-qty" value="2" min="0" max="10">
+            <div class="search-control search-control-person">
+              <label class="search-control-text-adult" for="adult-qty-field">Взрослые:</label>
+              <input type="number" class="search-form-field" id="adult-qty-field" name="adult-qty" value="2" min="0" max="10">
               <button class="qty-button qty-button-less" type="button">
                 <svg class="qty-button-icon" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z"/>
@@ -222,18 +222,18 @@
                 </svg>
                 <span class="visually-hidden">Увеличить количество</span>
               </button>
-            </label>
-            <label class="search-control search-control-person">
-              <span class="search-control-text-children">
-                Дети:
+            </div>
+            <div class="search-control search-control-person">
+              <p class="label-tooltip-wrapper">
+                <label class="search-control-text-children" for="children-qty-field">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-person"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-person">
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </span>
-              </span>
-              <input type="number" class="search-form-field" name="children-qty" value="2" min="0" max="10">
+              </p>
+              <input type="number" class="search-form-field" id="children-qty-field" name="children-qty" value="2" min="0" max="10">
               <button class="qty-button qty-button-less" type="button">
                 <svg class="qty-button-icon" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z"/>
@@ -246,7 +246,7 @@
                 </svg>
                 <span class="visually-hidden">Увеличить количество</span>
               </button>
-            </label>
+            </div>
           </div>
           <button class="modal-search-button" type="submit">Найти</button>
         </form>
