@@ -45,7 +45,7 @@
             </li>
             <li class="navigation-item">
               <div class="button-wrapper">
-                <button class="button" type="button">Хочу сюда!</button>
+                <a class="button" href="#">Хочу сюда!</a>
               </div>
             </li>
           </ul>
@@ -198,18 +198,18 @@
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="search-control search-control-date">
             <span class="search-control-text-date">Дата Заезда:</span>
-            <input type="text" class="search-form-field" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+            <input type="text" class="search-form-field" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
             <span class="search-control-tip search-control-tip-error">Мы не можем отправить вас в прошлое.</span>
           </label>
           <label class="search-control search-control-date">
             <span class="search-control-text-date">Дата Выезда:</span>
-            <input type="text" class="search-form-field" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+            <input type="text" class="search-form-field" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
             <span class="search-control-tip">На эти даты есть свободные номера. Пока есть.</span>
           </label>
           <div class="search-control-wrapper">
             <div class="search-control search-control-person">
               <label class="search-control-text-adult" for="adult-qty-field">Взрослые:</label>
-              <input type="number" class="search-form-field" id="adult-qty-field" name="adult-qty" value="2" min="0" max="10">
+              <input type="number" class="search-form-field" id="adult-qty-field" name="adult-qty" value="2" min="0" max="10" required>
               <button class="qty-button qty-button-less" type="button">
                 <svg class="qty-button-icon" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z"/>
